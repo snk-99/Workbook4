@@ -4,12 +4,11 @@
 function parsePartCode(partCode) {
     //finding end of colon to find supply code
     let colonPosition = partCode.indexOf(":");
-    let supplierCode = partCode.substring(0, colonPosition);
-
     //finding end of dash to find product number
     let dashPosition = partCode.indexOf("-");
-    let productNumber = partCode.substring(colonPosition + 1, dashPosition);
 
+    let supplierCode = partCode.substring(0, colonPosition);
+    let productNumber = partCode.substring(colonPosition + 1, dashPosition);
     //finding start size
     let size = partCode.substring(dashPosition + 1);
 

@@ -12,3 +12,6 @@ function printContact(myInfo) {
     console.log(`${myInfo.city}, ${myInfo.state} ${myInfo.zip}`);
 }
 printContact(contact);
+
+
+
