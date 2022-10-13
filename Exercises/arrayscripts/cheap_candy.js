@@ -14,8 +14,9 @@ let products = [
 
 function getCheapCandy() {
     let cheapCandys = [];
-    for (let i = 0; i < products.length; i++) {
-        const product = products[i];
+    //for of loop
+    for (let product of products) {
+        // const product = products[i];
         if (product.price < 4) {
             cheapCandys.push(product)
         }
