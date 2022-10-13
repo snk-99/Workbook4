@@ -51,7 +51,7 @@ function getCourse(courses, courseId) {
 function getCheapCourse() {
     let cheapCourses = [];
     for (let i = 0; i < courses.length; i++) {
-        const course = courses[i]
+        const course = courses[i];
         if (course.Fee <= 50) {
             cheapCourses.push(course)
         }
